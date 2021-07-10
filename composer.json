@@ -1,40 +1,18 @@
 {
-  "name": "akssaiyad/magento2-custom-catalog",
-  "description":"Magento 2 custom catalog",
-  "keywords": [
-    "magento 2"
-    "custom catalog",
-    "custom catalog list",
-    "magento 2 extension"
-  ],
-  "require": {
-        "magento/magento-composer-installer": "*"
-  },
-  "extra": {
-      "map": [
-          [
-              "*",
-              "Aks/CustomCatalog"
-          ]
-      ]
-  },  
+  "name": "aks/custom-catalog",
+  "description": "Magento 2 custom catalog",
   "type": "magento2-module",
   "version": "1.0.1",
   "license": [
     "OSL-3.0",
     "AFL-3.0"
   ],
-  "authors": [
-    {
-      "name": "Saiyad Asif",
-      "email": "akssaiyad@gmail.com",
-      "role": "Magento 2 Developer"
-    }
-  ],
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "magento/framework": "~100.0.4"
+  },
   "autoload": {
-    "files": [
-      "registration.php"
-    ],
+    "files": [ "registration.php" ],
     "psr-4": {
       "Aks\\CustomCatalog\\": ""
     }
